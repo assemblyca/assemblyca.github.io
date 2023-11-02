@@ -126,22 +126,28 @@
     <div class="hero-body">
         <div class="container">
             <div id="results-carousel" class="carousel results-carousel">
-                <div class="item item-random_soup">
-                    <video poster="" id="random_soup" autoplay controls muted loop height="100%"
+                <div class="item item-sweep_without_exceeding">
+                    <video poster="" id="sweep_without_exceeding" autoplay controls muted loop height="100%"
                            playbackRate=2.0>
                         <source src="assets/videos/assemblyca/randomsoup/1.mp4"
                                 type="video/mp4">
                     </video>
                 </div>
-                <div class="item item-random_soup">
-                    <video poster="" id="random_soup" autoplay controls muted loop height="100%"
+                <div class="item item-sweep_without_touching">
+                    <video poster="" id="sweep_without_touching" autoplay controls muted loop height="100%"
                            playbackRate=2.0>
                         <source src="assets/videos/assemblyca/randomsoup/1.mp4"
                                 type="video/mp4">
                     </video>
                 </div>
-                <div class="item item-random_soup">
-                    <video poster="" id="random_soup" autoplay controls muted loop height="100%">
+                <div class="item item-rotate">
+                    <video poster="" id="rotate" autoplay controls muted loop height="100%">
+                        <source src="assets/videos/assemblyca/randomsoup/1.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-scene_understanding">
+                    <video poster="" id="scene_understanding" autoplay controls muted loop height="100%">
                         <source src="assets/videos/assemblyca/randomsoup/1.mp4"
                                 type="video/mp4">
                     </video>
@@ -235,6 +241,9 @@
                     <br>
                     <img src="assets/images/Picture4.png" class="interpolation-image"
                          alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+                    <span style="font-size: 110%">
+                        <span style="font-weight: bold">Ablation on prompt conditioning.</span> We compare our method (<i>xattn</i>: cross-attention prompt conditioning) with a vanilla transformer decoder (<i>gpt-decoder</i>) across different model sizes. Cross-attention is especially helpful in low-parameter regime and for harder generalization tasks.
+                    </span>
                     </div>
                 </div>
             </div>
