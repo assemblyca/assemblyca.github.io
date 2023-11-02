@@ -12,7 +12,8 @@
             "novel-concept-grounding": "novel_concept_grounding",
             "one-shot-video-imitation": "one_shot_video_imitation",
             "visual-constraint-satisfaction": "visual_constraint_satisfaction",
-            "visual-reasoning": "visual_reasoning"
+            "visual-reasoning": "visual_reasoning",
+            "assemblyca": "assemblyca",
         };
 
         function updateDemoVideo(category) {
@@ -23,7 +24,7 @@
             console.log(task_map[category], task, inst)
 
             var video = document.getElementById(category + "-single-task-video");
-            video.src = "assets/videos/" +
+            video.src = "assets/videos/demos" +
                 task_map[category] +
                 "/" +
                 task +
@@ -70,12 +71,12 @@
                 <a target="_blank" href="https://sites.google.com/site/aerospike2x/home">Abhishek&#160;Sharma</a><sup>1</sup>,
                 <a target="_blank"
                    href="http://emergence.asu.edu/team.html">Sara&#160;I.&#160;Walker</a><sup>2</sup>,
-                <a target="_blank" href="https://www.chem.gla.ac.uk/cronin/members/lee-cronin/">Leroy&#160;Cronin</a><sup>1</sup>,
+                <a target="_blank" href="https://www.chem.gla.ac.uk/cronin/members/lee-cronin/">Leroy&#160;Cronin</a><sup>1</sup>
             </span>
                     </div>
 
                     <div class="is-size-5 publication-authors">
-                        <span class="author-block"><sup>1</sup>Complex Chemistry Labs, University of Glasgow </span>
+                        <span class="author-block"><sup>1</sup>Complex Chemistry Labs, University of Glasgow; </span>
                         <span class="author-block"><sup>2</sup>Arizona State University </span>
                     </div>
 
@@ -125,23 +126,23 @@
     <div class="hero-body">
         <div class="container">
             <div id="results-carousel" class="carousel results-carousel">
-                <div class="item item-sweep_without_exceeding">
-                    <video poster="" id="sweep_without_exceeding" autoplay controls muted loop height="100%"
+                <div class="item item-random_soup">
+                    <video poster="" id="random_soup" autoplay controls muted loop height="100%"
                            playbackRate=2.0>
-                        <source src="assets/videos/soup.mp4"
+                        <source src="assets/videos/assemblyca/randomsoup/soup.mp4"
                                 type="video/mp4">
                     </video>
                 </div>
-                <div class="item item-sweep_without_touching">
-                    <video poster="" id="sweep_without_touching" autoplay controls muted loop height="100%"
+                <div class="item item-random_soup">
+                    <video poster="" id="random_soup" autoplay controls muted loop height="100%"
                            playbackRate=2.0>
-                        <source src="assets/videos/soup.mp4"
+                        <source src="assets/videos/assemblyca/randomsoup/soup.mp4"
                                 type="video/mp4">
                     </video>
                 </div>
-                <div class="item item-rotate">
-                    <video poster="" id="rotate" autoplay controls muted loop height="100%">
-                        <source src="assets/videos/soup.mp4"
+                <div class="item item-random_soup">
+                    <video poster="" id="random_soup" autoplay controls muted loop height="100%">
+                        <source src="assets/videos/assemblyca/randomsoup/soup.mp4"
                                 type="video/mp4">
                     </video>
                 </div>
