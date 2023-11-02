@@ -239,7 +239,7 @@
                     <img src="assets/images/Picture4.png" class="interpolation-image"
                          alt="" style="display: block; margin-left: auto; margin-right: auto"/>
                     <span style="font-size: 110%">
-                        <span style="font-weight: bold">Ablation on prompt conditioning.</span> We compare our method (<i>xattn</i>: cross-attention prompt conditioning) with a vanilla transformer decoder (<i>gpt-decoder</i>) across different model sizes. Cross-attention is especially helpful in low-parameter regime and for harder generalization tasks.
+                        <span style="font-weight: bold">Comparison between entropy and assembly.</span> Up) Behaviour of the Rule 110 Cellular Automata. Comparison of the Assembly Index vs Entropy of the time evolution and the Mutual Information and the Assembly Distance between two arbitrary cells and subsequent cells. Down) The behavior of the Rule 30 Cellular Automata. Comparison of the Assembly Index vs Entropy of the time evolution and the Mutual Information and the Assembly Distance between two arbitrary cells and subsequent cells.
                     </span>
                     </div>
                 </div>
@@ -283,7 +283,7 @@
                          alt="" style="display: block; margin-left: auto; margin-right: auto"/>
                     <br>
                     <span style="font-size: 110%">
-                        <span style="font-weight: bold">Scaling model and data.</span> <i>Top</i>: We compare performance of different methods with model sizes ranging from 2M to 200M parameters. Across all model sizes and generalization levels, VIMA outperforms baseline variants. <i>Bottom</i>: For a fixed model size of 92M parameters we compare the effect of imitation learning dataset size with 0.1%, 1%, 10%, and full data. VIMA is extremely sample efficient and can achieve performance comparable to other methods with 10x less data.
+                        <span style="font-weight: bold">Distribution of undirected process.</span> An undirected process of searching GoL patterns generates a large number of unique low-memory objects and a handful of unique high-memory objects. The GoL soup search discovered objects of  low-memory in very high copy whereas the high-memory objects are found in very low copy.
                     </span>
                     <br>
                     <br>
@@ -298,7 +298,7 @@
                          alt="" style="display: block; margin-left: auto; margin-right: auto"/>
                     <br>
                     <span style="font-size: 110%">
-                        <span style="font-weight: bold">Ablation on visual tokenizers.</span> We compare the performance of VIMA-200M model across different visual tokenizers. Our proposed object tokens outperform all methods that learn directly from raw pixels, and <i>Object Perceiver</i> that downsamples the object sequence to a fixed number of tokens.
+                        <span style="font-weight: bold">Distribution of directed process.</span> Distribution of complexity and copy number of objects found by the GoL enthusiast community. We can see that the community has been systematically finding high-complexity objects in large quantities. This implies that the agent's search procedure is undergoing selection, therefore it is an open-ended process.
                     </span>
 
                     <br>
@@ -313,7 +313,7 @@
                          alt="" style="display: block; margin-left: auto; margin-right: auto"/>
                     <br>
                     <span style="font-size: 110%">
-                        <span style="font-weight: bold">Scaling model and data.</span> <i>Top</i>: We compare performance of different methods with model sizes ranging from 2M to 200M parameters. Across all model sizes and generalization levels, VIMA outperforms baseline variants. <i>Bottom</i>: For a fixed model size of 92M parameters we compare the effect of imitation learning dataset size with 0.1%, 1%, 10%, and full data. VIMA is extremely sample efficient and can achieve performance comparable to other methods with 10x less data.
+                        <span style="font-weight: bold">Distributions of objects found by a group of agents.</span> a) A group of agents searches for novel patterns given a starting library. They select a random object, modify it by means of growth and search for new patterns from the resulting pattern. If a new pattern is found it is added to the library. b) The group of agents finds more unique objects at a given complexity than a completely undirected process, but they stagnate at a relatively low complexity. This implies that the agent's search procedure is not undergoing selection, therefore it is not an open-ended process.
                     </span>
                     <br>
                     <br>
@@ -335,14 +335,9 @@
                             class="dvima">Conclusion</span></h2>
 
                     <p style="font-size: 125%">
-                        In this work, we introduce a novel <i>multimodal</i> prompting formulation that converts diverse
-                        robot manipulation tasks into a uniform sequence modeling problem. We instantiate this
-                        formulation in VIMA-Bench, a diverse benchmark with multimodal tasks and systematic evaluation
-                        protocols for generalization. We propose VIMA, a conceptually simple transformer-based agent
-                        capable of solving tasks such as visual goal reaching, one-shot video imitation, and novel
-                        concept grounding with a single model. Through comprehensive experiments, we show that VIMA
-                        exhibits strong model scalability and zero-shot generalization. Therefore, we recommend our
-                        agent design as a solid starting point for future work.
+                        In this work, a benchmark for open-endedness that analyses the products of a system consisting of agents, resources, and discrete cellular automata was introduced. The benchmark is capable of capturing the intuitive idea of unlimited complexity and novelty of an open-ended system. By analyzing the complexity and the copy number of a set of CA objects generated by our agents, we can characterize the amount of open-endedness of such a system. The benchmark is compared with other measures of open-endedness, its complexity measure is compared with entropy, and it's found that the AssemblyCA complexity or memory is able to properly characterize the phenomenon of historical contingency, key for generating complex objects. Finally, three experiments were performed with the aim of showing systems with different degrees of open-endedness. 
+
+In the future, we intend to study in more detail some elements of the undirected-directed transition in the CA framework. These include the amount of selectivity in the agent's search, a robust definition of an object in CA, and the analysis of different CA rules and the transition between them. In addition, we plan a deeper study of the cultural behavior of the LifeWiki system. This is highly relevant for the understanding and quantification of open-endedness. Lastly, we plan to study more elaborate agents that can discover CA objects, such as LLM-based CA object explorers. This is highly relevant for a rigorous benchmark of the capabilities of different LLM-agents.
                     </p>
 
                 </div>
