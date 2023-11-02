@@ -85,7 +85,7 @@
                             <!-- TODO PDF Link. -->
 
                             <span class="link-block">
-                <a target="_blank" href="assets/vima_paper.pdf"
+                <a target="_blank" href="assets/BenchMark_OpenEndness_v4_camera_ready.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -183,7 +183,7 @@
                     <img src="assets/images/Picture1.png" class="interpolation-image"
                          alt="" style="display: block; margin-left: auto; margin-right: auto"/>
                     <br>
-                    <span style="font-size: 110%"><b>Multimodal prompts for task specification.</b> We observe that many robot manipulation tasks can be expressed as <i>multimodal prompts</i> that interleave language and image/video frames. We propose VIMA, an embodied agent capable of processing mulitimodal prompts (left) and controlling a robot arm to solve the task (right).</span>
+                    <span style="font-size: 110%"><b>AssemblyCA Framework.</b> Given  a system where a set of agents can interact with a CA world and they have access to a limited amount of inputs, computation, and a library of discovered patterns. The agents will generate as a byproduct a series of objects, or CA patterns by modifying the CA initial conditions. By analyzing the output of objects of this system the amount of open-endedness of the system is quantified.</span>
                 </div>
             </div>
         </div>
@@ -201,10 +201,7 @@
                          alt="" style="display: block; margin-left: auto; margin-right: auto"/>
                     <br>
                     <span style="font-size: 110%">
-<span style="font-weight: bold">VIMA architecture.</span> We encode the multimodal prompts with a pre-trained T5 model, and condition the robot controller on the prompt through cross-attention layers. The controller is a causal transformer decoder consisting of alternating self and cross attention layers that predicts motor commands conditioned on prompts and interaction history.</span>
-                <span style="font-size: 110%">
-                        <span style="font-weight: bold">Ablation on visual tokenizers.</span> We compare the performance of VIMA-200M model across different visual tokenizers. Our proposed object tokens outperform all methods that learn directly from raw pixels, and <i>Object Perceiver</i> that downsamples the object sequence to a fixed number of tokens.
-                    </span>
+<span style="font-weight: bold">Selection in Assembly Theory adapted from <a href="https://www.nature.com/articles/s41586-023-06600-9">Sharma, et al 2023</a> .</span> A) Representation of pathways to construct objects with undirected and directed processes (selected) leading to the low and high copy numbers of the observed object. B) Distributions of  copy number vs assembly index(complexity) for processes that undergo selection or not.</span>
 
                     <br>
                     <br>
