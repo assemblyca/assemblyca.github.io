@@ -5,36 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AssemblyCA| A Benchmark of Open-Endedness for Discrete Cellular Automata</title>
 
-    <script>
-        var task_map = {
-            "simple-object-manipulation": "simple_object_manipulation",
-            "visual-goal-reaching": "visual_goal_reaching",
-            "novel-concept-grounding": "novel_concept_grounding",
-            "one-shot-video-imitation": "one_shot_video_imitation",
-            "visual-constraint-satisfaction": "visual_constraint_satisfaction",
-            "visual-reasoning": "visual_reasoning",
-            "assemblyca": "assemblyca",
-        };
 
-        function updateDemoVideo(category) {
-            // var demo = document.getElementById("single-menu-demos").value;
-            var task = document.getElementById(category + "-menu-tasks").value;
-            var inst = document.getElementById(category + "-menu-instances").value;
-
-            console.log(task_map[category], task, inst)
-
-            var video = document.getElementById(category + "-single-task-video");
-            video.src = "assets/videos/demos" +
-                task_map[category] +
-                "/" +
-                task +
-                "/" +
-                inst +
-                ".mp4";
-            video.playbackRate = 2.0;
-            video.play();
-        }
-    </script>
 
     <script type="text/javascript" src="https://catagolue.hatsya.com/js/lv-plugin.js"></script>
 
