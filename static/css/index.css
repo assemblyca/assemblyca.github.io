@@ -199,3 +199,12 @@ body {
 .hscroll {
   overflow-x: auto; /* Horizontal */
 }
+.vid-demo{
+  width:50%;
+}
+
+@media (max-width: 992px){
+.vid-demo {
+    width:100%;
+  }
+}
